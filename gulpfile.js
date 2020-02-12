@@ -1,4 +1,4 @@
-var requireDir = require('require-dir');
+let requireDir = require('require-dir');
 let proj_name = process.argv[3].substr(2);
 const gulp = require('gulp');
 let proj_args = "";
