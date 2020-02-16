@@ -1,7 +1,9 @@
-let requireDir = require('require-dir');
-let proj_name = process.argv[3].substr(2);
+const requireDir = require('require-dir');
 const gulp = require('gulp');
 let proj_args = "";
+let proj_name = process.argv[3].substr(2);
+
+proj_name = (proj_name[proj_name.length - 1] == '/' || proj_name[proj_name.length - 1] == '\\') ? (proj_name.substr(0, proj_name.length - 1) ) : (proj_name); 
 
 module.exports = { sshConfig: {
   host: '',

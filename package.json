@@ -9,6 +9,7 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "gifsicle": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cssbeautify": "^2.0.0",
