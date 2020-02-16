@@ -13,14 +13,13 @@ module.exports = { sshConfig: {
 } };
 
 if( typeof(process.argv[4]) != "undefined" ){
-	proj_args = "_" + process.argv[4].substr(2);
+  proj_args = "_" + process.argv[4].substr(2);
 }
 
 requireDir(proj_name);
 gulp.task("start", function() { 
-	return new Promise(function(resolve, reject) {
-		(gulp.parallel(proj_name + proj_args)());
-		resolve();
-	});
+  return new Promise(function(resolve, reject) {
+    (gulp.parallel(proj_name + proj_args)());
+    resolve();
+  });
 });
-
